@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: boostify-website
+    name: dorego-services-group
     env: node
     plan: free
     buildCommand: npm install
@@ -30,9 +30,9 @@ services:
         sync: false
       - key: FROM_EMAIL
         sync: false
-      # URL du site (à remplacer par votre domaine)
+      # URL du site
       - key: SITE_URL
-        sync: false
+        value: https://dorego-services-group.onrender.com
       # WhatsApp
       - key: WHATSAPP_NUMBER
-        value: "2250161498523"
+        value: "2250502657392"

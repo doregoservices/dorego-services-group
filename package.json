@@ -1,7 +1,7 @@
 {
-  "name": "boostify-website",
-  "version": "2.0.0",
-  "description": "Site web officiel professionnel de Boostify - L'Alpha du Branding par Bello Shouaïb",
+  "name": "dorego-services-group",
+  "version": "1.0.0",
+  "description": "Site web de DOREGO Services GROUP - comptabilité, formations, outils digitaux et créativité",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -9,13 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "branding",
-    "infographie",
-    "graphic-design",
-    "boostify",
-    "bello-shouaib"
+    "comptabilité",
+    "fiscalité",
+    "formation",
+    "outils-digitaux",
+    "site-web",
+    "dorego"
   ],
-  "author": "Bello Shouaïb",
+  "author": "DOREGO Mouhamed Nabil",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
