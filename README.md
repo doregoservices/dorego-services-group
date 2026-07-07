@@ -1,22 +1,33 @@
-# Boostify Template Universel
+# DOREGO Services GROUP
 
-Modèle de site vitrine universel pour créer rapidement des sites web pour différents types de clients : services, produits ou e-commerce.
+Site web de **DOREGO Mouhamed Nabil**, comptable senior et CEO de DOREGO Services GROUP.
 
-## 3 variantes disponibles
+## Services proposés
 
-| Branche | Usage | Exemples de clients |
-|---------|-------|---------------------|
-| `main` | Services uniquement | Coiffeur, plombier, consultant, restaurant, infographiste... |
-| `with-products` | Services + catalogue de produits | Restaurant avec livraison, artisan avec boutique, salon avec produits... |
-| `ecommerce` | Vente en ligne complète | Boutique de vêtements, électronique, marchandises... |
+- Assistance comptable et fiscale
+- Formations (comptabilité, informatique, bureautique, Excel)
+- Outils de gestion automatisés (Excel, applications web/mobile)
+- Création de sites web
+- Infographie et impressions
+- Musique personnalisée
+- CV professionnels
 
-## Utilisation rapide
+## Produits disponibles
 
-1. Créer un nouveau dépôt à partir de ce modèle.
-2. Choisir la branche qui correspond au client.
-3. Déployer sur Render.
-4. Créer une base MongoDB Atlas.
-5. Configurer les variables d'environnement.
-6. Personnaliser le site via `/admin`.
+- Packs Excel comptabilité automatique
+- Packs Excel gestion de stock
+- Modèles de CV premium
 
-Voir le fichier `GUIDE-TEMPLATE.md` pour le détail complet.
+## Informations de contact
+
+- Email : doregoservices@gmail.com
+- Téléphone / WhatsApp : +225 05 02 65 73 92
+- Adresse : Marcory, Zone 4, Abidjan
+
+## Admin
+
+Accédez au panneau d'administration à l'adresse `/admin` pour modifier le contenu, les services, les packs, les produits et les visuels.
+
+## Déploiement
+
+Ce site est déployé sur Render à partir de la branche `with-products` du dépôt `dorego-services-group`.

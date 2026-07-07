@@ -10,48 +10,47 @@ const router = express.Router();
 
 const CONFIG_FILE = 'config';
 
-// Fallback minimal en mode fichier (sans MongoDB)
 const defaultConfig = {
-  siteName: 'Mon Site',
-  slogan: 'Votre slogan ici',
-  founderName: 'Nom du fondateur',
-  role: 'Votre activité',
-  email: 'contact@example.com',
-  phone: '+225 00 00 00 00',
-  whatsapp: '+225 00 00 00 00',
-  location: 'Votre localisation',
+  siteName: 'DOREGO Services GROUP',
+  slogan: 'Chiffres, digital et créativité au service de votre croissance',
+  founderName: 'DOREGO Mouhamed Nabil',
+  role: 'Comptable senior & CEO',
+  email: 'doregoservices@gmail.com',
+  phone: '+225 05 02 65 73 92',
+  whatsapp: '+225 05 02 65 73 92',
+  location: 'Marcory, Zone 4, Abidjan',
   website: '',
-  logoPath: 'images/logo-boostify.svg',
-  darkLogoPath: 'images/logo-boostify-dark.svg',
+  logoPath: 'images/logo-dorego.png',
+  darkLogoPath: 'images/logo-dorego-dark.png',
   faviconPath: 'favicon.svg',
-  primaryColor: '#F5A623',
-  darkColor: '#111111',
-  description: 'Décrivez votre activité ici.',
-  aboutTitle: 'À propos de nous',
-  aboutText: "Présentez votre activité. Ce texte est modifiable dans l'admin.",
-  footerText: 'Votre slogan ou message de footer.',
-  metaDescription: 'Description de votre site.',
-  metaKeywords: 'site, services, entreprise',
-  heroTitle: 'Votre titre principal',
-  heroSubtitle: '',
-  heroEyebrow: 'Votre activité',
-  heroTags: 'Service 1, Service 2, Service 3, Service 4',
+  primaryColor: '#D4AF37',
+  darkColor: '#0A2540',
+  description: 'Comptabilité, fiscalité, formations, outils de gestion automatisés, création de sites web, musique personnalisée et CV professionnels.',
+  aboutTitle: 'À propos de DOREGO Services GROUP',
+  aboutText: 'DOREGO Services GROUP, c\'est le croisement entre la rigueur comptable et l\'innovation digitale. Sous la direction de DOREGO Mouhamed Nabil, comptable senior avec plus de 4 ans d\'expérience, nous accompagnons entreprises et entrepreneurs dans la gestion de leurs comptes, la formation de leurs équipes et la digitalisation de leurs outils.',
+  footerText: 'Chiffres, digital et créativité au service de votre croissance.',
+  metaDescription: 'DOREGO Services GROUP - comptabilité, fiscalité, formations, outils digitaux, sites web, musique et CV professionnels en Côte d\'Ivoire.',
+  metaKeywords: 'comptable, fiscalité, formation, Excel, outils de gestion, site web, CV, musique, Abidjan, Côte d\'Ivoire',
+  heroTitle: 'DOREGO Services GROUP',
+  heroSubtitle: 'Votre croissance, notre expertise',
+  heroEyebrow: 'Comptabilité · Digital · Créativité',
+  heroTags: 'Comptabilité, Formations, Outils Excel, Sites Web, CV, Musique',
   servicesTitle: 'Nos services',
   servicesEyebrow: 'Ce que nous proposons',
   packsTitle: 'Nos formules',
   packsEyebrow: 'Choisissez ce qui vous convient',
   portfolioTitle: 'Nos réalisations',
   portfolioEyebrow: 'Exemples de notre travail',
+  productsTitle: 'Nos outils et packs',
+  productsEyebrow: 'Téléchargeables et sur mesure',
   testimonialsTitle: 'Ce que disent nos clients',
   testimonialsEyebrow: 'Ils nous ont fait confiance',
-  productsTitle: 'Découvrez nos produits',
-  productsEyebrow: 'Nos produits',
-  processStep1Title: 'Contact',
-  processStep1Desc: 'Vous nous expliquez votre besoin.',
+  processStep1Title: 'Échange',
+  processStep1Desc: 'Vous nous présentez votre besoin et vos objectifs.',
   processStep2Title: 'Réalisation',
-  processStep2Desc: 'Nous travaillons sur votre projet.',
+  processStep2Desc: 'Nous travaillons sur votre solution avec rigueur et créativité.',
   processStep3Title: 'Livraison',
-  processStep3Desc: 'Vous recevez le résultat final.'
+  processStep3Desc: 'Vous recevez un résultat clé en main, prêt à être utilisé.'
 };
 
 const allowedFields = [
@@ -60,8 +59,8 @@ const allowedFields = [
   'faviconPath', 'primaryColor', 'darkColor', 'description', 'aboutTitle', 'aboutText',
   'footerText', 'metaDescription', 'metaKeywords', 'heroTitle', 'heroSubtitle',
   'heroEyebrow', 'heroTags', 'servicesTitle', 'servicesEyebrow', 'packsTitle', 'packsEyebrow',
-  'portfolioTitle', 'portfolioEyebrow', 'testimonialsTitle', 'testimonialsEyebrow',
-  'productsTitle', 'productsEyebrow',
+  'portfolioTitle', 'portfolioEyebrow', 'productsTitle', 'productsEyebrow',
+  'testimonialsTitle', 'testimonialsEyebrow',
   'processStep1Title', 'processStep1Desc', 'processStep2Title', 'processStep2Desc',
   'processStep3Title', 'processStep3Desc'
 ];
@@ -97,7 +96,6 @@ async function saveConfig(updates) {
   }
 }
 
-// GET /api/config - Public config
 router.get('/', async (req, res) => {
   try {
     const config = await getConfig();
@@ -108,7 +106,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// PUT /api/config - Update config (admin)
 router.put('/', adminAuth, async (req, res) => {
   try {
     const config = await saveConfig(req.body);
@@ -119,7 +116,6 @@ router.put('/', adminAuth, async (req, res) => {
   }
 });
 
-// POST /api/config/upload-logo - Upload logo (admin)
 router.post('/upload-logo', adminAuth, upload.single('logo'), async (req, res) => {
   try {
     if (!req.file) {

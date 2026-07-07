@@ -3,35 +3,35 @@ const mongoose = require('mongoose');
 const configSchema = new mongoose.Schema({
   siteName: {
     type: String,
-    default: 'Mon Site'
+    default: 'DOREGO Services GROUP'
   },
   slogan: {
     type: String,
-    default: 'Votre slogan ici'
+    default: 'Chiffres, digital et créativité au service de votre croissance'
   },
   founderName: {
     type: String,
-    default: 'Nom du fondateur'
+    default: 'DOREGO Mouhamed Nabil'
   },
   role: {
     type: String,
-    default: 'Votre activité'
+    default: 'Comptable senior & CEO'
   },
   email: {
     type: String,
-    default: 'contact@example.com'
+    default: 'doregoservices@gmail.com'
   },
   phone: {
     type: String,
-    default: '+225 00 00 00 00'
+    default: '+225 05 02 65 73 92'
   },
   whatsapp: {
     type: String,
-    default: '+225 00 00 00 00'
+    default: '+225 05 02 65 73 92'
   },
   location: {
     type: String,
-    default: 'Votre localisation'
+    default: 'Marcory, Zone 4, Abidjan'
   },
   website: {
     type: String,
@@ -39,11 +39,11 @@ const configSchema = new mongoose.Schema({
   },
   logoPath: {
     type: String,
-    default: 'images/logo-boostify.svg'
+    default: 'images/logo-dorego.png'
   },
   darkLogoPath: {
     type: String,
-    default: 'images/logo-boostify-dark.svg'
+    default: 'images/logo-dorego-dark.png'
   },
   faviconPath: {
     type: String,
@@ -51,51 +51,51 @@ const configSchema = new mongoose.Schema({
   },
   primaryColor: {
     type: String,
-    default: '#F5A623'
+    default: '#D4AF37'
   },
   darkColor: {
     type: String,
-    default: '#111111'
+    default: '#0A2540'
   },
   description: {
     type: String,
-    default: 'Décrivez votre activité ici. Ce texte apparaît sur la page d\'accueil.'
+    default: 'Comptabilité, fiscalité, formations, outils de gestion automatisés, création de sites web, musique personnalisée et CV professionnels.'
   },
   aboutTitle: {
     type: String,
-    default: "À propos de nous"
+    default: 'À propos de DOREGO Services GROUP'
   },
   aboutText: {
     type: String,
-    default: "Présentez votre activité, votre expérience et ce qui vous différencie. Ce texte est modifiable dans l'admin."
+    default: "DOREGO Services GROUP, c'est le croisement entre la rigueur comptable et l'innovation digitale. Sous la direction de DOREGO Mouhamed Nabil, comptable senior avec plus de 4 ans d'expérience, nous accompagnons entreprises et entrepreneurs dans la gestion de leurs comptes, la formation de leurs équipes et la digitalisation de leurs outils."
   },
   footerText: {
     type: String,
-    default: "Votre slogan ou message de footer."
+    default: 'Chiffres, digital et créativité au service de votre croissance.'
   },
   metaDescription: {
     type: String,
-    default: 'Description de votre site pour Google et les réseaux sociaux.'
+    default: 'DOREGO Services GROUP - comptabilité, fiscalité, formations, outils digitaux, sites web, musique et CV professionnels en Côte d\'Ivoire.'
   },
   metaKeywords: {
     type: String,
-    default: 'site, services, entreprise'
+    default: 'comptable, fiscalité, formation, Excel, outils de gestion, site web, CV, musique, Abidjan, Côte d\'Ivoire'
   },
   heroTitle: {
     type: String,
-    default: "Votre titre principal"
+    default: 'DOREGO Services GROUP'
   },
   heroSubtitle: {
     type: String,
-    default: ''
+    default: 'Votre croissance, notre expertise'
   },
   heroEyebrow: {
     type: String,
-    default: 'Votre activité'
+    default: 'Comptabilité · Digital · Créativité'
   },
   heroTags: {
     type: String,
-    default: 'Service 1, Service 2, Service 3, Service 4'
+    default: 'Comptabilité, Formations, Outils Excel, Sites Web, CV, Musique'
   },
   servicesTitle: {
     type: String,
@@ -121,6 +121,14 @@ const configSchema = new mongoose.Schema({
     type: String,
     default: 'Exemples de notre travail'
   },
+  productsTitle: {
+    type: String,
+    default: 'Nos outils et packs'
+  },
+  productsEyebrow: {
+    type: String,
+    default: 'Téléchargeables et sur mesure'
+  },
   testimonialsTitle: {
     type: String,
     default: 'Ce que disent nos clients'
@@ -129,21 +137,13 @@ const configSchema = new mongoose.Schema({
     type: String,
     default: 'Ils nous ont fait confiance'
   },
-  productsTitle: {
-    type: String,
-    default: 'Découvrez nos produits'
-  },
-  productsEyebrow: {
-    type: String,
-    default: 'Nos produits'
-  },
   processStep1Title: {
     type: String,
-    default: 'Contact'
+    default: 'Échange'
   },
   processStep1Desc: {
     type: String,
-    default: 'Vous nous expliquez votre besoin.'
+    default: 'Vous nous présentez votre besoin et vos objectifs.'
   },
   processStep2Title: {
     type: String,
@@ -151,7 +151,7 @@ const configSchema = new mongoose.Schema({
   },
   processStep2Desc: {
     type: String,
-    default: 'Nous travaillons sur votre projet.'
+    default: 'Nous travaillons sur votre solution avec rigueur et créativité.'
   },
   processStep3Title: {
     type: String,
@@ -159,7 +159,7 @@ const configSchema = new mongoose.Schema({
   },
   processStep3Desc: {
     type: String,
-    default: 'Vous recevez le résultat final.'
+    default: 'Vous recevez un résultat clé en main, prêt à être utilisé.'
   },
   updatedAt: {
     type: Date,
@@ -167,7 +167,6 @@ const configSchema = new mongoose.Schema({
   }
 });
 
-// Ensure only one config document exists
 configSchema.statics.getConfig = async function() {
   let config = await this.findOne();
   if (!config) {
