@@ -226,9 +226,10 @@ async function loadConfig() {
       if (twitterImage) twitterImage.setAttribute('content', config.logoPath);
     }
 
-    // Update favicon (legacy field)
+    // Use custom faviconPath only if user uploaded a data URI favicon;
+    // otherwise keep the logo-based favicon set above.
     const favicon = document.getElementById('favicon');
-    if (favicon && config.faviconPath) {
+    if (favicon && config.faviconPath && config.faviconPath.startsWith('data:')) {
       favicon.href = config.faviconPath;
     }
 
@@ -302,7 +303,7 @@ async function loadConfig() {
         if (config.heroSubtitle) {
           heroTitleAccent.textContent = config.heroSubtitle;
           heroTitleAccent.setAttribute('data-fr', config.heroSubtitle);
-          heroTitleAccent.style.display = 'inline';
+          heroTitleAccent.style.display = 'block';
         } else {
           heroTitleAccent.style.display = 'none';
         }

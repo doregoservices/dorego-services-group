@@ -293,6 +293,7 @@ img {
 .hero h1 .accent {
   color: var(--orange);
   display: block;
+  margin-top: 16px;
 }
 
 .hero-desc {
