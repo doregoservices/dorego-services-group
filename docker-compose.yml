@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: boostify-mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: boostify_secret
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - boostify-network
+
+  app:
+    build: .
+    container_name: boostify-app
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      MONGODB_URI: mongodb://admin:boostify_secret@mongo:27017/boostify?authSource=admin
+      ADMIN_PASSWORD: boostify2024
+      SMTP_HOST: smtp.gmail.com
+      SMTP_PORT: 587
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASS: ${SMTP_PASS}
+      NOTIFICATION_EMAIL: ${NOTIFICATION_EMAIL}
+      FROM_EMAIL: ${FROM_EMAIL}
+      SITE_URL: ${SITE_URL:-http://localhost:3000}
+      WHATSAPP_NUMBER: ${WHATSAPP_NUMBER:-2250161498523}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./public/images:/app/public/images
+    networks:
+      - boostify-network
+
+volumes:
+  mongo-data:
+
+networks:
+  boostify-network:
+    driver: bridge

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site | Votre activité</title>
+  <meta name="description" content="Description de votre site. Modifiable dans l'admin.">
+  <meta name="keywords" content="site, services, entreprise">
+  <meta name="author" content="Votre nom">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F5A623">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.onrender.com/">
+  <meta property="og:title" content="Mon Site">
+  <meta property="og:description" content="Description de votre site.">
+  <meta property="og:image" content="" id="ogImage">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://example.onrender.com/">
+  <meta property="twitter:title" content="Mon Site">
+  <meta property="twitter:description" content="Description de votre site.">
+  <meta property="twitter:image" content="" id="twitterImage">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://example.onrender.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" id="favicon">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json" id="schemaData">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Mon Site",
+    "alternateName": "Votre activité",
+    "description": "Description de votre activité.",
+    "url": "https://example.onrender.com/",
+    "logo": "https://example.onrender.com/images/logo-boostify.svg",
+    "founder": {
+      "@type": "Person",
+      "name": "Nom du fondateur"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Votre localisation",
+      "addressCountry": "CI"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2250000000000",
+      "contactType": "customer service",
+      "availableLanguage": ["French", "English"]
+    },
+    "sameAs": [
+      "https://example.onrender.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Logo" class="logo-img" id="siteLogo">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" data-fr="Services" data-en="Services">Services</a>
+        <a href="#packs" data-fr="Packs" data-en="Packs">Packs</a>
+        <a href="#portfolio" data-fr="Réalisations" data-en="Works">Réalisations</a>
+        <a href="#testimonials" data-fr="Avis" data-en="Reviews">Avis</a>
+        <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+        <a href="#contact" class="nav-cta" data-fr="Commander" data-en="Order">Commander</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 6h15l-1.5 9h-12z"></path>
+            <circle cx="9" cy="20" r="1.5"></circle>
+            <circle cx="18" cy="20" r="1.5"></circle>
+            <path d="M6 6L5 3H2"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="lang-toggle">
+          <button id="btn-fr" class="active">FR</button>
+          <button id="btn-en">EN</button>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow" id="heroEyebrow" data-fr="Infographie & Branding" data-en="Graphic Design & Branding">Infographie & Branding</p>
+        <h1 id="heroTitle">
+          <span id="heroTitleMain" data-fr="L'Alpha" data-en="The Alpha">L'Alpha</span>
+          <span id="heroTitleAccent" class="accent" data-fr="du Branding" data-en="of Branding">du Branding</span>
+        </h1>
+        <p class="hero-desc" id="heroDescription" data-fr="Décrivez votre activité ici. Ce texte est modifiable dans l'admin." data-en="Describe your activity here. This text is editable in the admin.">
+          Décrivez votre activité ici. Ce texte est modifiable dans l'admin.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+          <a href="#portfolio" class="btn btn-outline" data-fr="Voir nos réalisations" data-en="See our work">Voir nos réalisations</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>500+</strong><span data-fr="projets livrés" data-en="projects delivered">projets livrés</span></div>
+          <div><strong>150+</strong><span data-fr="clients satisfaits" data-en="happy clients">clients satisfaits</span></div>
+          <div><strong>5+</strong><span data-fr="années d'expérience" data-en="years of experience">années d'expérience</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Logo" class="hero-logo" id="heroLogo">
+          <div class="hero-card-tags" id="heroTags">
+            <span>Service 1</span>
+            <span>Service 2</span>
+            <span>Service 3</span>
+            <span>Service 4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#services" aria-label="Scroll">
+        <span class="mouse"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" id="servicesEyebrow" data-fr="Nos expertises" data-en="Our expertise">Nos expertises</p>
+        <h2 id="servicesTitle" data-fr="Des solutions créatives pour chaque besoin" data-en="Creative solutions for every need">Des solutions créatives pour chaque besoin</h2>
+      </div>
+      <div class="services-grid" id="servicesGrid">
+        <div class="empty" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #666;">
+          Chargement des services...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packs -->
+  <section class="packs section" id="packs">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" id="packsEyebrow" data-fr="Nos packs" data-en="Our packs">Nos packs</p>
+        <h2 id="packsTitle" data-fr="Choisissez le pack adapté à votre ambition" data-en="Choose the pack that fits your ambition">Choisissez le pack adapté à votre ambition</h2>
+      </div>
+      <div class="packs-grid" id="packsGrid">
+        <div class="empty" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #666;">
+          Chargement des packs...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" id="productsEyebrow" data-fr="Nos produits" data-en="Our products">Nos produits</p>
+        <h2 id="productsTitle" data-fr="Découvrez nos produits" data-en="Discover our products">Découvrez nos produits</h2>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <div class="empty" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #666;">
+          Chargement des produits...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Notre méthode" data-en="Our method">Notre méthode</p>
+        <h2 data-fr="Comment nous travaillons" data-en="How we work">Comment nous travaillons</h2>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 id="processStep1Title" data-fr="Brief" data-en="Brief">Brief</h3>
+          <p id="processStep1Desc" data-fr="Vous décrivez votre projet, vos objectifs et vos inspirations." data-en="You describe your project, goals and inspirations.">Vous décrivez votre projet, vos objectifs et vos inspirations.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 id="processStep2Title" data-fr="Conception" data-en="Design">Conception</h3>
+          <p id="processStep2Desc" data-fr="Nous créons des propositions créatives et affinons ensemble." data-en="We create creative proposals and refine them together.">Nous créons des propositions créatives et affinons ensemble.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 id="processStep3Title" data-fr="Livraison" data-en="Delivery">Livraison</h3>
+          <p id="processStep3Desc" data-fr="Vous recevez vos fichiers prêts à l'impression et au web." data-en="You receive your files ready for print and web.">Vous recevez vos fichiers prêts à l'impression et au web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" id="portfolioEyebrow" data-fr="Nos réalisations" data-en="Our works">Nos réalisations</p>
+        <h2 id="portfolioTitle" data-fr="Quelques créations Boostify" data-en="Some Boostify creations">Quelques créations Boostify</h2>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="empty" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #666;">
+          Chargement des réalisations...
+        </div>
+      </div>
+      <div class="portfolio-more">
+        <a href="#contact" class="btn btn-primary" data-fr="Ajouter votre projet à cette galerie" data-en="Add your project to this gallery">Ajouter votre projet à cette galerie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" id="testimonialsEyebrow" data-fr="Ils nous ont fait confiance" data-en="They trusted us">Ils nous ont fait confiance</p>
+        <h2 id="testimonialsTitle" data-fr="Ce que disent nos clients" data-en="What our clients say">Ce que disent nos clients</h2>
+      </div>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="empty" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #666;">
+          Chargement des avis...
+        </div>
+      </div>
+      <div class="testimonial-cta">
+        <button class="btn btn-primary" id="openTestimonialBtn" data-fr="Laisser un avis" data-en="Leave a review">Laisser un avis</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Modal -->
+  <div class="modal" id="testimonialModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeTestimonialModal">&times;</button>
+      <h3 data-fr="Partagez votre expérience" data-en="Share your experience">Partagez votre expérience</h3>
+      <p data-fr="Votre avis sera publié après validation." data-en="Your review will be published after validation.">Votre avis sera publié après validation.</p>
+      <form id="testimonialForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tName" data-fr="Votre nom" data-en="Your name">Votre nom</label>
+            <input type="text" id="tName" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="tCompany" data-fr="Entreprise (optionnel)" data-en="Company (optional)">Entreprise (optionnel)</label>
+            <input type="text" id="tCompany" name="company">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tRating" data-fr="Note" data-en="Rating">Note</label>
+          <select id="tRating" name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Très bien</option>
+            <option value="3">⭐⭐⭐ Bien</option>
+            <option value="2">⭐⭐ Moyen</option>
+            <option value="1">⭐ À améliorer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tMessage" data-fr="Votre commentaire" data-en="Your review">Votre commentaire</label>
+          <textarea id="tMessage" name="text" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-fr="Envoyer mon avis" data-en="Send my review">Envoyer mon avis</button>
+        <div class="form-message" id="testimonialMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeCartModal">&times;</button>
+      <h3 data-fr="Votre panier" data-en="Your cart">Votre panier</h3>
+      <div id="cartItems">
+        <p class="empty-cart" data-fr="Votre panier est vide." data-en="Your cart is empty.">Votre panier est vide.</p>
+      </div>
+      <div class="cart-total" id="cartTotal" style="display: none;">
+        <strong data-fr="Total :" data-en="Total:">Total :</strong> <span id="cartTotalValue">0 FCFA</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" style="margin-top: 20px;" data-fr="Passer la commande" data-en="Proceed to checkout">Passer la commande</button>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Logo" id="aboutLogo">
+          <div class="about-name" id="founderName">Nom du fondateur</div>
+          <div class="about-role" id="founderRole" data-fr="Infographiste & Brand Designer" data-en="Graphic Designer & Brand Designer">Infographiste & Brand Designer</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow" data-fr="À propos" data-en="About">À propos</p>
+        <h2 id="aboutTitle" data-fr="Donner du pouvoir à chaque marque" data-en="Empowering every brand">Donner du pouvoir à chaque marque</h2>
+        <p id="aboutText" data-fr="Présentez votre activité, votre expérience et ce qui vous différencie. Ce texte est modifiable dans l'admin." data-en="Describe your activity, experience and what makes you different. This text is editable in the admin.">
+          Présentez votre activité, votre expérience et ce qui vous différencie. Ce texte est modifiable dans l'admin.
+        </p>
+        <div class="about-contact" id="aboutContact">
+          <a href="mailto:" class="contact-line" id="aboutEmail">
+            <span>✉️</span> <span class="contact-text">Email</span>
+          </a>
+          <a href="tel:" class="contact-line" id="aboutPhone">
+            <span>📞</span> <span class="contact-text">Téléphone</span>
+          </a>
+          <a href="https://wa.me/" target="_blank" class="contact-line" id="aboutWhatsapp">
+            <span>💬</span> <span class="contact-text">WhatsApp</span>
+          </a>
+          <a href="https://example.onrender.com" target="_blank" class="contact-line" id="websiteLink" style="display: none;">
+            <span>🌐</span> <span id="websiteText">Site web</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Order -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Commander" data-en="Order">Commander</p>
+        <h2 data-fr="Lancez votre projet dès maintenant" data-en="Start your project now">Lancez votre projet dès maintenant</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-fr="Parlons de votre projet" data-en="Let's talk about your project">Parlons de votre projet</h3>
+          <p data-fr="Remplissez le formulaire pour demander un devis ou commander un pack. Je vous réponds dans les 24 heures." data-en="Fill out the form to request a quote or order a pack. I will respond within 24 hours.">Remplissez le formulaire pour demander un devis ou commander un pack. Je vous réponds dans les 24 heures.</p>
+          <div class="contact-info-list" id="contactInfoList">
+            <a href="mailto:" class="info-item" id="contactEmail">
+              <span class="info-icon">✉️</span>
+              <span>Email</span>
+            </a>
+            <a href="tel:" class="info-item" id="contactPhone">
+              <span class="info-icon">📞</span>
+              <span>Téléphone</span>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="info-item" id="contactWhatsapp">
+              <span class="info-icon">💬</span>
+              <span>WhatsApp</span>
+            </a>
+            <div class="info-item" id="contactLocation">
+              <span class="info-icon">📍</span>
+              <span>Localisation</span>
+            </div>
+          </div>
+        </div>
+        <form class="order-form" id="orderForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-fr="Nom complet" data-en="Full name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-fr="Email" data-en="Email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-fr="Téléphone" data-en="Phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="company" data-fr="Entreprise (optionnel)" data-en="Company (optional)">Entreprise (optionnel)</label>
+              <input type="text" id="company" name="company">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pack" data-fr="Pack ou service souhaité" data-en="Desired pack or service">Pack ou service souhaité</label>
+            <select id="pack" name="pack" required>
+              <option value="" data-fr="Sélectionnez..." data-en="Select...">Sélectionnez...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-fr="Décrivez votre projet" data-en="Describe your project">Décrivez votre projet</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="langue" data-fr="Langue de préférence" data-en="Preferred language">Langue de préférence</label>
+            <select id="langue" name="langue">
+              <option value="Français">Français</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn" data-fr="Envoyer la demande" data-en="Send request">Envoyer la demande</button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/" class="whatsapp-float" id="whatsappFloat" target="_blank" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.174 0C5.396 0 .025 5.367.025 11.987c0 2.11.552 4.17 1.595 5.99L0 24l6.335-1.652a11.975 11.975 0 006.29 1.76h.005c6.778 0 12.149-5.367 12.149-11.987 0-3.205-1.247-6.219-3.514-8.47"/>
+    </svg>
+    <span class="whatsapp-text" data-fr="Discuter sur WhatsApp" data-en="Chat on WhatsApp">Discuter sur WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Logo" class="footer-logo" id="footerLogo">
+          <p id="sloganText" data-fr="L'Alpha du Branding. Votre identité visuelle, notre mission." data-en="The Alpha of Branding. Your visual identity, our mission.">L'Alpha du Branding. Votre identité visuelle, notre mission.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Services" data-en="Services">Services</h4>
+          <a href="#services" data-fr="Création graphique" data-en="Graphic design">Création graphique</a>
+          <a href="#services" data-fr="Impression" data-en="Printing">Impression</a>
+          <a href="#services" data-fr="Réseaux sociaux" data-en="Social media">Réseaux sociaux</a>
+          <a href="#services" data-fr="Sites web" data-en="Websites">Sites web</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Packs" data-en="Packs">Packs</h4>
+          <a href="#packs">Pack Starter</a>
+          <a href="#packs">Pack Business</a>
+          <a href="#packs">Pack Premium</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:" id="footerEmail"><span>Email</span></a>
+          <a href="tel:" id="footerPhone"><span>Téléphone</span></a>
+          <a href="https://wa.me/" target="_blank" id="footerWhatsapp"><span>WhatsApp</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span id="footerSiteName">Mon Site</span> — <span id="footerFounderName">Nom du fondateur</span>. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Analytics 4 (remplacez G-XXXXXXXXXX par votre ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Facebook Pixel (remplacez par votre ID si nécessaire) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'FB_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
