@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostify — L'Alpha du Branding | Infographie & Branding en Côte d'Ivoire</title>
+  <meta name="description" content="Boostify, l'agence de Bello Shouaïb, spécialiste en infographie, branding, logos, réseaux sociaux et impression en Côte d'Ivoire. Demandez un devis personnalisé.">
+  <meta name="keywords" content="infographie, branding, logo, flyer, carte de visite, réseaux sociaux, Côte d'Ivoire, Abidjan, Conzagüe, Boostify, Bello Shouaïb">
+  <meta name="author" content="Bello Shouaïb">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F5A623">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://boostify-website.onrender.com/">
+  <meta property="og:title" content="Boostify — L'Alpha du Branding">
+  <meta property="og:description" content="Agence d'infographie et de branding en Côte d'Ivoire. Logos, flyers, réseaux sociaux, sites web et impression.">
+  <meta property="og:image" content="https://boostify-website.onrender.com/images/logo-boostify.svg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://boostify-website.onrender.com/">
+  <meta property="twitter:title" content="Boostify — L'Alpha du Branding">
+  <meta property="twitter:description" content="Agence d'infographie et de branding en Côte d'Ivoire. Logos, flyers, réseaux sociaux, sites web et impression.">
+  <meta property="twitter:image" content="https://boostify-website.onrender.com/images/logo-boostify.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://boostify-website.onrender.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+  <link rel="apple-touch-icon" href="images/logo-boostify.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <style>:root {
+  --orange: #F5A623;
+  --orange-dark: #E08E00;
+  --black: #111111;
+  --dark: #1a1a2e;
+  --white: #ffffff;
+  --gray: #f4f4f7;
+  --text: #333333;
+  --text-light: #666666;
+  --radius: 18px;
+  --shadow: 0 20px 60px rgba(0,0,0,0.12);
+  --shadow-sm: 0 4px 20px rgba(0,0,0,0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-eyebrow {
+  color: var(--orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: var(--black);
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--orange-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(245, 166, 35, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 18px 0;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.header.scrolled .logo-img {
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9rem;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: var(--transition);
+}
+
+.nav a:hover::after,
+.nav a.nav-cta::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: var(--orange);
+  color: var(--black) !important;
+  padding: 10px 22px;
+  border-radius: 50px;
+}
+
+.nav-cta:hover {
+  background: var(--orange-dark);
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 6px;
+  margin-left: 20px;
+}
+
+.lang-toggle button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lang-toggle button.active,
+.lang-toggle button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--black) 0%, var(--dark) 50%, #16213e 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(245,166,35,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero h1 .accent {
+  color: var(--orange);
+  display: block;
+}
+
+.hero-desc {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 540px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats strong {
+  font-size: 2rem;
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.hero-stats span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-logo {
+  height: 220px;
+  width: auto;
+  margin-bottom: 24px;
+}
+
+.hero-card-tags {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-card-tags span {
+  background: rgba(245,166,35,0.2);
+  color: var(--orange);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse {
+  display: block;
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 12px;
+  position: relative;
+}
+
+.mouse::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 6px;
+  background: var(--orange);
+  border-radius: 2px;
+  animation: scroll 2s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes scroll {
+  0% { opacity: 1; top: 8px; }
+  100% { opacity: 0; top: 20px; }
+}
+
+/* Services */
+.services {
+  background: var(--gray);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 40px 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--orange);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.service-card:hover::before {
+  height: 100%;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Packs */
+.packs {
+  background: var(--white);
+}
+
+.packs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pack-card {
+  background: var(--white);
+  border: 1px solid #e8e8ef;
+  border-radius: var(--radius);
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.pack-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-6px);
+}
+
+.pack-card.featured {
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.pack-card.featured:hover {
+  transform: scale(1.05) translateY(-6px);
+}
+
+.pack-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--gray);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pack-badge.popular {
+  background: var(--orange);
+  color: var(--black);
+}
+
+.pack-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pack-price {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--orange);
+  margin: 20px 0;
+}
+
+.pack-price span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.pack-card.featured .pack-price span {
+  color: rgba(255,255,255,0.7);
+}
+
+.pack-card ul {
+  list-style: none;
+  margin: 20px 0 30px;
+  text-align: left;
+}
+
+.pack-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pack-card li::before {
+  content: '✓';
+  color: var(--orange);
+  font-weight: 900;
+}
+
+.pack-card.featured li {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.pack-card .btn {
+  margin-top: auto;
+}
+
+/* Process */
+.process {
+  background: var(--black);
+  color: var(--white);
+}
+
+.process .section-header h2 {
+  color: var(--white);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.step {
+  text-align: center;
+  padding: 40px 30px;
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: var(--transition);
+}
+
+.step:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-6px);
+}
+
+.step-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--orange);
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.step p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+}
+
+/* Portfolio */
+.portfolio {
+  background: var(--gray);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.portfolio-img {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray);
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.05);
+}
+
+.portfolio-item p {
+  padding: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 0.95rem;
+}
+
+.portfolio-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--white);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.testimonial-card {
+  background: var(--gray);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.testimonial-quote {
+  font-size: 3rem;
+  color: var(--orange);
+  line-height: 1;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-stars {
+  color: var(--orange);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+.testimonial-company {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.testimonial-cta {
+  text-align: center;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 40px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow);
+  animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  color: var(--orange);
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.modal-content > p {
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+/* About */
+.about {
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  background: var(--gray);
+  border-radius: 30px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  max-width: 340px;
+}
+
+.about-card img {
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.about-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--black);
+}
+
+.about-role {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.about-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--black);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.about-content p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.about-contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.contact-line:hover {
+  color: var(--orange);
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--black) 100%);
+  color: var(--white);
+}
+
+.contact .section-header h2 {
+  color: var(--white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--white);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.info-item:hover {
+  color: var(--orange);
+}
+
+.info-icon {
+  font-size: 1.3rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(245,166,35,0.15);
+  border-radius: 10px;
+}
+
+/* Order Form */
+.order-form {
+  background: var(--white);
+  color: var(--text);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e8e8ef;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  background: var(--white);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-message {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: none;
+}
+
+.form-message.success {
+  background: #d4edda;
+  color: #155724;
+  display: block;
+}
+
+.form-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  display: block;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+}
+
+@keyframes whatsappPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    padding: 12px 14px;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #0a0a0a;
+  color: var(--white);
+  padding: 70px 0 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  max-width: 280px;
+}
+
+.footer-links h4 {
+  color: var(--orange);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--orange);
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btns,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    order: 1;
+  }
+
+  .about-content {
+    order: 2;
+  }
+
+  .packs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pack-card.featured {
+    transform: scale(1);
+  }
+
+  .pack-card.featured:hover {
+    transform: scale(1) translateY(-6px);
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--black);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 30px;
+    gap: 24px;
+    transition: var(--transition);
+    z-index: 999;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .lang-toggle {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Boostify",
+    "alternateName": "L'Alpha du Branding",
+    "description": "Agence d'infographie et de branding en Côte d'Ivoire. Création de logos, flyers, cartes de visite, visuels réseaux sociaux et sites web.",
+    "url": "https://boostify-website.onrender.com/",
+    "logo": "https://boostify-website.onrender.com/images/logo-boostify.svg",
+    "founder": {
+      "@type": "Person",
+      "name": "Bello Shouaïb"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Conzagüe Ville",
+      "addressCountry": "CI"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+22966014336",
+      "contactType": "customer service",
+      "availableLanguage": ["French", "English"]
+    },
+    "sameAs": [
+      "https://www.Boostify.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="images/logo-boostify.svg" alt="Boostify Logo" class="logo-img" id="siteLogo">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" data-fr="Services" data-en="Services">Services</a>
+        <a href="#packs" data-fr="Packs" data-en="Packs">Packs</a>
+        <a href="#portfolio" data-fr="Réalisations" data-en="Works">Réalisations</a>
+        <a href="#testimonials" data-fr="Avis" data-en="Reviews">Avis</a>
+        <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+        <a href="#contact" class="nav-cta" data-fr="Commander" data-en="Order">Commander</a>
+      </nav>
+      <div class="lang-toggle">
+        <button id="btn-fr" class="active">FR</button>
+        <button id="btn-en">EN</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow" data-fr="Infographie & Branding" data-en="Graphic Design & Branding">Infographie & Branding</p>
+        <h1>
+          <span data-fr="L'Alpha" data-en="The Alpha">L'Alpha</span>
+          <span class="accent" data-fr="du Branding" data-en="of Branding">du Branding</span>
+        </h1>
+        <p class="hero-desc" data-fr="Boostify donne vie à votre identité visuelle. Logos, affiches, réseaux sociaux, impressions, sites web — tout ce dont votre marque a besoin pour briller." data-en="Boostify brings your visual identity to life. Logos, posters, social media, printing, websites — everything your brand needs to shine.">
+          Boostify donne vie à votre identité visuelle. Logos, affiches, réseaux sociaux, impressions, sites web — tout ce dont votre marque a besoin pour briller.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+          <a href="#portfolio" class="btn btn-outline" data-fr="Voir nos réalisations" data-en="See our work">Voir nos réalisations</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>500+</strong><span data-fr="projets livrés" data-en="projects delivered">projets livrés</span></div>
+          <div><strong>150+</strong><span data-fr="clients satisfaits" data-en="happy clients">clients satisfaits</span></div>
+          <div><strong>5+</strong><span data-fr="années d'expérience" data-en="years of experience">années d'expérience</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="images/logo-boostify.svg" alt="Boostify Logo" class="hero-logo" id="heroLogo">
+          <div class="hero-card-tags">
+            <span>Logo</span>
+            <span>Print</span>
+            <span>Social</span>
+            <span>Web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#services" aria-label="Scroll">
+        <span class="mouse"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Nos expertises" data-en="Our expertise">Nos expertises</p>
+        <h2 data-fr="Des solutions créatives pour chaque besoin" data-en="Creative solutions for every need">Des solutions créatives pour chaque besoin</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3 data-fr="Création graphique" data-en="Graphic design">Création graphique</h3>
+          <p data-fr="Logos, affiches, flyers, cartes de visite, bannières, menus et visuels réseaux sociaux." data-en="Logos, posters, flyers, business cards, banners, menus and social media visuals.">Logos, affiches, flyers, cartes de visite, bannières, menus et visuels réseaux sociaux.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🖨️</div>
+          <h3 data-fr="Impression" data-en="Printing">Impression</h3>
+          <p data-fr="Cartes de visite, flyers, bâches, autocollants, T-shirts personnalisés, facturiers et carnets de reçus." data-en="Business cards, flyers, banners, stickers, custom T-shirts, invoices and receipt books.">Cartes de visite, flyers, bâches, autocollants, T-shirts personnalisés, facturiers et carnets de reçus.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3 data-fr="Réseaux sociaux" data-en="Social media">Réseaux sociaux</h3>
+          <p data-fr="Création de pages, contenus mensuels, publicités Facebook/Instagram et optimisation de profils." data-en="Page creation, monthly content, Facebook/Instagram ads and profile optimization.">Création de pages, contenus mensuels, publicités Facebook/Instagram et optimisation de profils.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3 data-fr="Services entreprises" data-en="Business services">Services entreprises</h3>
+          <p data-fr="Identité visuelle complète, présentations, brochures, catalogues et signatures e-mail." data-en="Complete visual identity, presentations, brochures, catalogs and email signatures.">Identité visuelle complète, présentations, brochures, catalogues et signatures e-mail.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3 data-fr="Services numériques" data-en="Digital services">Services numériques</h3>
+          <p data-fr="Sites vitrines, CV professionnels, portfolios, QR codes personnalisés et création de contenu." data-en="Showcase websites, professional CVs, portfolios, custom QR codes and content creation.">Sites vitrines, CV professionnels, portfolios, QR codes personnalisés et création de contenu.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3 data-fr="Accompagnement publicitaire" data-en="Advertising support">Accompagnement publicitaire</h3>
+          <p data-fr="Stratégie, création de campagnes, suivi et optimisation pour maximiser votre retour sur investissement." data-en="Strategy, campaign creation, tracking and optimization to maximize your return on investment.">Stratégie, création de campagnes, suivi et optimisation pour maximiser votre retour sur investissement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packs -->
+  <section class="packs section" id="packs">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Nos packs" data-en="Our packs">Nos packs</p>
+        <h2 data-fr="Choisissez le pack adapté à votre ambition" data-en="Choose the pack that fits your ambition">Choisissez le pack adapté à votre ambition</h2>
+      </div>
+      <div class="packs-grid">
+        <div class="pack-card">
+          <div class="pack-badge" data-fr="Idéal démarrage" data-en="Ideal startup">Idéal démarrage</div>
+          <h3>Pack Starter</h3>
+          <div class="pack-price">15 000 <span>FCFA</span></div>
+          <ul>
+            <li data-fr="1 logo professionnel" data-en="1 professional logo">1 logo professionnel</li>
+            <li data-fr="Carte de visite" data-en="Business card">Carte de visite</li>
+            <li data-fr="Visuel Facebook" data-en="Facebook visual">Visuel Facebook</li>
+          </ul>
+          <button class="btn btn-primary select-pack" data-pack="Pack Starter" data-fr="Choisir ce pack" data-en="Choose this pack">Choisir ce pack</button>
+        </div>
+        <div class="pack-card featured">
+          <div class="pack-badge popular" data-fr="Le plus populaire" data-en="Most popular">Le plus populaire</div>
+          <h3>Pack Business</h3>
+          <div class="pack-price">35 000 <span>FCFA</span></div>
+          <ul>
+            <li data-fr="1 logo professionnel" data-en="1 professional logo">1 logo professionnel</li>
+            <li data-fr="Carte de visite" data-en="Business card">Carte de visite</li>
+            <li data-fr="Flyer" data-en="Flyer">Flyer</li>
+            <li data-fr="Couverture Facebook" data-en="Facebook cover">Couverture Facebook</li>
+          </ul>
+          <button class="btn btn-primary select-pack" data-pack="Pack Business" data-fr="Choisir ce pack" data-en="Choose this pack">Choisir ce pack</button>
+        </div>
+        <div class="pack-card">
+          <div class="pack-badge" data-fr="Tout inclus" data-en="All inclusive">Tout inclus</div>
+          <h3>Pack Premium</h3>
+          <div class="pack-price">75 000 <span>FCFA</span></div>
+          <ul>
+            <li data-fr="Identité visuelle complète" data-en="Complete visual identity">Identité visuelle complète</li>
+            <li data-fr="10 visuels réseaux sociaux" data-en="10 social media visuals">10 visuels réseaux sociaux</li>
+            <li data-fr="Flyer" data-en="Flyer">Flyer</li>
+            <li data-fr="Carte de visite" data-en="Business card">Carte de visite</li>
+            <li data-fr="Accompagnement publicitaire" data-en="Advertising support">Accompagnement publicitaire</li>
+          </ul>
+          <button class="btn btn-primary select-pack" data-pack="Pack Premium" data-fr="Choisir ce pack" data-en="Choose this pack">Choisir ce pack</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Notre méthode" data-en="Our method">Notre méthode</p>
+        <h2 data-fr="Comment nous travaillons" data-en="How we work">Comment nous travaillons</h2>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 data-fr="Brief" data-en="Brief">Brief</h3>
+          <p data-fr="Vous décrivez votre projet, vos objectifs et vos inspirations." data-en="You describe your project, goals and inspirations.">Vous décrivez votre projet, vos objectifs et vos inspirations.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 data-fr="Conception" data-en="Design">Conception</h3>
+          <p data-fr="Nous créons des propositions créatives et affinons ensemble." data-en="We create creative proposals and refine them together.">Nous créons des propositions créatives et affinons ensemble.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 data-fr="Livraison" data-en="Delivery">Livraison</h3>
+          <p data-fr="Vous recevez vos fichiers prêts à l'impression et au web." data-en="You receive your files ready for print and web.">Vous recevez vos fichiers prêts à l'impression et au web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Nos réalisations" data-en="Our works">Nos réalisations</p>
+        <h2 data-fr="Quelques créations Boostify" data-en="Some Boostify creations">Quelques créations Boostify</h2>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="portfolio-item reveal">
+          <div class="portfolio-img">
+            <img src="images/portfolio-business-card.jpg" alt="Carte de visite Boostify" loading="lazy">
+          </div>
+          <p data-fr="Carte de visite premium" data-en="Premium business card">Carte de visite premium</p>
+        </div>
+        <div class="portfolio-item reveal">
+          <div class="portfolio-img">
+            <img src="images/portfolio-shopping-bags.jpg" alt="Sacs Boostify" loading="lazy">
+          </div>
+          <p data-fr="Sacs & packaging" data-en="Bags & packaging">Sacs & packaging</p>
+        </div>
+        <div class="portfolio-item reveal">
+          <div class="portfolio-img">
+            <img src="images/portfolio-tshirt.jpg" alt="T-shirt Boostify" loading="lazy">
+          </div>
+          <p data-fr="T-shirt personnalisé" data-en="Custom T-shirt">T-shirt personnalisé</p>
+        </div>
+        <div class="portfolio-item reveal">
+          <div class="portfolio-img">
+            <img src="images/portfolio-logo-design.jpg" alt="Logo Boostify" loading="lazy">
+          </div>
+          <p data-fr="Logo & identité visuelle" data-en="Logo & visual identity">Logo & identité visuelle</p>
+        </div>
+      </div>
+      <div class="portfolio-more">
+        <a href="#contact" class="btn btn-primary" data-fr="Ajouter votre projet à cette galerie" data-en="Add your project to this gallery">Ajouter votre projet à cette galerie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Ils nous ont fait confiance" data-en="They trusted us">Ils nous ont fait confiance</p>
+        <h2 data-fr="Ce que disent nos clients" data-en="What our clients say">Ce que disent nos clients</h2>
+      </div>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">Boostify a transformé l'image de ma boulangerie. Le logo et les flyers sont magnifiques. Merci Bello !</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">KJ</div>
+            <div>
+              <div class="testimonial-name">Kouassi Jean</div>
+              <div class="testimonial-company">Boulangerie La Mie Dorée</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">Très professionnel, réactif et créatif. Je recommande Boostify à tous les entrepreneurs.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AD</div>
+            <div>
+              <div class="testimonial-name">Amina Diallo</div>
+              <div class="testimonial-company">Boutique Élégance</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">⭐⭐⭐⭐</div>
+          <p class="testimonial-text">Les menus et les visuels Instagram ont vraiment boosté ma présence en ligne. Excellent travail.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">YM</div>
+            <div>
+              <div class="testimonial-name">Yao Marcel</div>
+              <div class="testimonial-company">Restaurant Chez Kofi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-cta">
+        <button class="btn btn-primary" id="openTestimonialBtn" data-fr="Laisser un avis" data-en="Leave a review">Laisser un avis</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Modal -->
+  <div class="modal" id="testimonialModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeTestimonialModal">&times;</button>
+      <h3 data-fr="Partagez votre expérience" data-en="Share your experience">Partagez votre expérience</h3>
+      <p data-fr="Votre avis sera publié après validation." data-en="Your review will be published after validation.">Votre avis sera publié après validation.</p>
+      <form id="testimonialForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tName" data-fr="Votre nom" data-en="Your name">Votre nom</label>
+            <input type="text" id="tName" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="tCompany" data-fr="Entreprise (optionnel)" data-en="Company (optional)">Entreprise (optionnel)</label>
+            <input type="text" id="tCompany" name="company">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tRating" data-fr="Note" data-en="Rating">Note</label>
+          <select id="tRating" name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Très bien</option>
+            <option value="3">⭐⭐⭐ Bien</option>
+            <option value="2">⭐⭐ Moyen</option>
+            <option value="1">⭐ À améliorer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tMessage" data-fr="Votre commentaire" data-en="Your review">Votre commentaire</label>
+          <textarea id="tMessage" name="text" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-fr="Envoyer mon avis" data-en="Send my review">Envoyer mon avis</button>
+        <div class="form-message" id="testimonialMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card">
+          <img src="images/logo-boostify.svg" alt="Boostify" id="aboutLogo">
+          <div class="about-name" id="founderName">Bello Shouaïb</div>
+          <div class="about-role" id="founderRole" data-fr="Infographiste & Brand Designer" data-en="Graphic Designer & Brand Designer">Infographiste & Brand Designer</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow" data-fr="À propos" data-en="About">À propos</p>
+        <h2 data-fr="Donner du pouvoir à chaque marque" data-en="Empowering every brand">Donner du pouvoir à chaque marque</h2>
+        <p data-fr="Je suis Bello Shouaïb, fondateur de Boostify. Je conçois des identités visuelles impactantes et des supports de communication modernes pour entrepreneurs, entreprises et particuliers. Mon objectif : transformer vos idées en designs mémorables qui boostent votre image." data-en="I am Bello Shouaïb, founder of Boostify. I design impactful visual identities and modern communication materials for entrepreneurs, businesses and individuals. My goal: transform your ideas into memorable designs that boost your image.">
+          Je suis Bello Shouaïb, fondateur de Boostify. Je conçois des identités visuelles impactantes et des supports de communication modernes pour entrepreneurs, entreprises et particuliers. Mon objectif : transformer vos idées en designs mémorables qui boostent votre image.
+        </p>
+        <p data-fr="Basé à Conzagüe Ville, je travaille avec des clients en Côte d'Ivoire et au-delà." data-en="Based in Conzagüe Ville, I work with clients in Côte d'Ivoire and beyond.">Basé à Conzagüe Ville, je travaille avec des clients en Côte d'Ivoire et au-delà.</p>
+        <div class="about-contact" id="aboutContact">
+          <a href="mailto:bellosuaibou@7gmail.com" class="contact-line">
+            <span>✉️</span> bellosuaibou@7gmail.com
+          </a>
+          <a href="tel:+22966014336" class="contact-line">
+            <span>📞</span> +229 66 01 43 36
+          </a>
+          <a href="https://wa.me/2250161498523" target="_blank" class="contact-line">
+            <span>💬</span> +225 01 61 49 85 23 (WhatsApp)
+          </a>
+          <a href="https://www.Boostify.com" target="_blank" class="contact-line">
+            <span>🌐</span> www.Boostify.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Order -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow" data-fr="Commander" data-en="Order">Commander</p>
+        <h2 data-fr="Lancez votre projet dès maintenant" data-en="Start your project now">Lancez votre projet dès maintenant</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-fr="Parlons de votre projet" data-en="Let's talk about your project">Parlons de votre projet</h3>
+          <p data-fr="Remplissez le formulaire pour demander un devis ou commander un pack. Je vous réponds dans les 24 heures." data-en="Fill out the form to request a quote or order a pack. I will respond within 24 hours.">Remplissez le formulaire pour demander un devis ou commander un pack. Je vous réponds dans les 24 heures.</p>
+          <div class="contact-info-list" id="contactInfoList">
+            <a href="mailto:bellosuaibou@7gmail.com" class="info-item">
+              <span class="info-icon">✉️</span>
+              <span>bellosuaibou@7gmail.com</span>
+            </a>
+            <a href="tel:+22966014336" class="info-item">
+              <span class="info-icon">📞</span>
+              <span>+229 66 01 43 36</span>
+            </a>
+            <a href="https://wa.me/2250161498523" target="_blank" class="info-item">
+              <span class="info-icon">💬</span>
+              <span>WhatsApp : +225 01 61 49 85 23</span>
+            </a>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Conzagüe Ville</span>
+            </div>
+          </div>
+        </div>
+        <form class="order-form" id="orderForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-fr="Nom complet" data-en="Full name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-fr="Email" data-en="Email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-fr="Téléphone" data-en="Phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="company" data-fr="Entreprise (optionnel)" data-en="Company (optional)">Entreprise (optionnel)</label>
+              <input type="text" id="company" name="company">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pack" data-fr="Pack ou service souhaité" data-en="Desired pack or service">Pack ou service souhaité</label>
+            <select id="pack" name="pack" required>
+              <option value="" data-fr="Sélectionnez..." data-en="Select...">Sélectionnez...</option>
+              <option value="Pack Starter">Pack Starter — 15 000 FCFA</option>
+              <option value="Pack Business">Pack Business — 35 000 FCFA</option>
+              <option value="Pack Premium">Pack Premium — 75 000 FCFA</option>
+              <option value="Identité visuelle complète" data-fr="Identité visuelle complète" data-en="Complete visual identity">Identité visuelle complète</option>
+              <option value="Création de site web" data-fr="Création de site web" data-en="Website creation">Création de site web</option>
+              <option value="Publicités réseaux sociaux" data-fr="Publicités réseaux sociaux" data-en="Social media ads">Publicités réseaux sociaux</option>
+              <option value="Autre" data-fr="Autre (précisez ci-dessous)" data-en="Other (specify below)">Autre (précisez ci-dessous)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-fr="Décrivez votre projet" data-en="Describe your project">Décrivez votre projet</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="langue" data-fr="Langue de préférence" data-en="Preferred language">Langue de préférence</label>
+            <select id="langue" name="langue">
+              <option value="Français">Français</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn" data-fr="Envoyer la demande" data-en="Send request">Envoyer la demande</button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/2250161498523?text=Bonjour%20Boostify%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services." class="whatsapp-float" id="whatsappFloat" target="_blank" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.174 0C5.396 0 .025 5.367.025 11.987c0 2.11.552 4.17 1.595 5.99L0 24l6.335-1.652a11.975 11.975 0 006.29 1.76h.005c6.778 0 12.149-5.367 12.149-11.987 0-3.205-1.247-6.219-3.514-8.47"/>
+    </svg>
+    <span class="whatsapp-text" data-fr="Discuter sur WhatsApp" data-en="Chat on WhatsApp">Discuter sur WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo-boostify.svg" alt="Boostify" class="footer-logo" id="footerLogo">
+          <p data-fr="L'Alpha du Branding. Votre identité visuelle, notre mission." data-en="The Alpha of Branding. Your visual identity, our mission.">L'Alpha du Branding. Votre identité visuelle, notre mission.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Services" data-en="Services">Services</h4>
+          <a href="#services" data-fr="Création graphique" data-en="Graphic design">Création graphique</a>
+          <a href="#services" data-fr="Impression" data-en="Printing">Impression</a>
+          <a href="#services" data-fr="Réseaux sociaux" data-en="Social media">Réseaux sociaux</a>
+          <a href="#services" data-fr="Sites web" data-en="Websites">Sites web</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Packs" data-en="Packs">Packs</h4>
+          <a href="#packs">Pack Starter</a>
+          <a href="#packs">Pack Business</a>
+          <a href="#packs">Pack Premium</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <a href="mailto:bellosuaibou@7gmail.com">bellosuaibou@7gmail.com</a>
+          <a href="tel:+22966014336">+229 66 01 43 36</a>
+          <a href="https://wa.me/2250161498523" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Boostify — <span id="footerFounderName">Bello Shouaïb</span>. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Analytics 4 (remplacez G-XXXXXXXXXX par votre ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Facebook Pixel (remplacez par votre ID si nécessaire) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'FB_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <script>// Language management
+const langData = {
+  fr: {
+    // Page title
+    title: "Boostify — L'Alpha du Branding",
+    // Navigation
+    nav: {
+      services: "Services",
+      packs: "Packs",
+      portfolio: "Portfolio",
+      about: "À propos",
+      order: "Commander"
+    },
+    // Hero
+    hero: {
+      eyebrow: "Infographie & Branding",
+      title1: "L'Alpha",
+      title2: "du Branding",
+      desc: "Boostify donne vie à votre identité visuelle. Logos, affiches, réseaux sociaux, impressions, sites web — tout ce dont votre marque a besoin pour briller.",
+      cta1: "Demander un devis",
+      cta2: "Voir nos réalisations",
+      stat1: "projets livrés",
+      stat2: "clients satisfaits",
+      stat3: "années d'expérience"
+    },
+    // Sections
+    sections: {
+      servicesTitle: "Des solutions créatives pour chaque besoin",
+      servicesEyebrow: "Nos expertises",
+      packsTitle: "Choisissez le pack adapté à votre ambition",
+      packsEyebrow: "Nos packs",
+      processTitle: "Comment nous travaillons",
+      processEyebrow: "Notre méthode",
+      portfolioTitle: "Quelques créations Boostify",
+      portfolioEyebrow: "Portfolio",
+      aboutTitle: "Donner du pouvoir à chaque marque",
+      aboutEyebrow: "À propos",
+      contactTitle: "Lancez votre projet dès maintenant",
+      contactEyebrow: "Commander"
+    },
+    // Services
+    services: {
+      graphicTitle: "Création graphique",
+      graphicDesc: "Logos, affiches, flyers, cartes de visite, bannières, menus et visuels réseaux sociaux.",
+      printTitle: "Impression",
+      printDesc: "Cartes de visite, flyers, bâches, autocollants, T-shirts personnalisés, facturiers et carnets de reçus.",
+      socialTitle: "Réseaux sociaux",
+      socialDesc: "Création de pages, contenus mensuels, publicités Facebook/Instagram et optimisation de profils.",
+      businessTitle: "Services entreprises",
+      businessDesc: "Identité visuelle complète, présentations, brochures, catalogues et signatures e-mail.",
+      digitalTitle: "Services numériques",
+      digitalDesc: "Sites vitrines, CV professionnels, portfolios, QR codes personnalisés et création de contenu.",
+      adsTitle: "Accompagnement publicitaire",
+      adsDesc: "Stratégie, création de campagnes, suivi et optimisation pour maximiser votre retour sur investissement."
+    },
+    // Packs
+    packs: {
+      starterBadge: "Idéal démarrage",
+      businessBadge: "Le plus populaire",
+      premiumBadge: "Tout inclus",
+      starterBtn: "Choisir ce pack",
+      businessBtn: "Choisir ce pack",
+      premiumBtn: "Choisir ce pack",
+      logo: "1 logo professionnel",
+      card: "Carte de visite",
+      fbVisual: "Visuel Facebook",
+      flyer: "Flyer",
+      fbCover: "Couverture Facebook",
+      identity: "Identité visuelle complète",
+      social10: "10 visuels réseaux sociaux",
+      support: "Accompagnement publicitaire"
+    },
+    // Process
+    process: {
+      briefTitle: "Brief",
+      briefDesc: "Vous décrivez votre projet, vos objectifs et vos inspirations.",
+      designTitle: "Conception",
+      designDesc: "Nous créons des propositions créatives et affinons ensemble.",
+      deliveryTitle: "Livraison",
+      deliveryDesc: "Vous recevez vos fichiers prêts à l'impression et au web."
+    },
+    // Portfolio
+    portfolio: {
+      card1: "Carte de visite premium",
+      card2: "Sacs & packaging",
+      card3: "T-shirt personnalisé",
+      card4: "Logo & identité visuelle"
+    },
+    // About
+    about: {
+      role: "Infographiste & Brand Designer",
+      p1: "Je suis Bello Shouaïb, fondateur de Boostify. Je conçois des identités visuelles impactantes et des supports de communication modernes pour entrepreneurs, entreprises et particuliers. Mon objectif : transformer vos idées en designs mémorables qui boostent votre image.",
+      p2: "Basé à Conzagüe Ville, je travaille avec des clients en Côte d'Ivoire et au-delà."
+    },
+    // Testimonials
+    testimonials: {
+      eyebrow: "Ils nous ont fait confiance",
+      title: "Ce que disent nos clients",
+      leaveReview: "Laisser un avis",
+      shareExperience: "Partagez votre expérience",
+      willBeValidated: "Votre avis sera publié après validation.",
+      yourName: "Votre nom",
+      rating: "Note",
+      yourReview: "Votre commentaire",
+      sendReview: "Envoyer mon avis",
+      success: "✅ Merci ! Votre avis sera publié après validation.",
+      error: "❌ Une erreur est survenue. Veuillez réessayer."
+    },
+    // Contact
+    contact: {
+      title: "Parlons de votre projet",
+      desc: "Remplissez le formulaire pour demander un devis ou commander un pack. Je vous réponds dans les 24 heures.",
+      name: "Nom complet",
+      email: "Email",
+      phone: "Téléphone",
+      company: "Entreprise (optionnel)",
+      service: "Pack ou service souhaité",
+      website: "Création de site web",
+      select: "Sélectionnez...",
+      message: "Décrivez votre projet",
+      language: "Langue de préférence",
+      submit: "Envoyer la demande",
+      success: "✅ Demande envoyée avec succès ! Je vous réponds dans les 24 heures.",
+      error: "❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement."
+    },
+    // Footer
+    footer: {
+      tagline: "L'Alpha du Branding. Votre identité visuelle, notre mission.",
+      services: "Services",
+      packs: "Packs",
+      contact: "Contact",
+      rights: "Tous droits réservés."
+    }
+  },
+  en: {
+    title: "Boostify — The Alpha of Branding",
+    nav: {
+      services: "Services",
+      packs: "Packs",
+      portfolio: "Portfolio",
+      about: "About",
+      order: "Order"
+    },
+    hero: {
+      eyebrow: "Graphic Design & Branding",
+      title1: "The Alpha",
+      title2: "of Branding",
+      desc: "Boostify brings your visual identity to life. Logos, posters, social media, printing, websites — everything your brand needs to shine.",
+      cta1: "Request a quote",
+      cta2: "See our work",
+      stat1: "projects delivered",
+      stat2: "happy clients",
+      stat3: "years of experience"
+    },
+    sections: {
+      servicesTitle: "Creative solutions for every need",
+      servicesEyebrow: "Our expertise",
+      packsTitle: "Choose the pack that fits your ambition",
+      packsEyebrow: "Our packs",
+      processTitle: "How we work",
+      processEyebrow: "Our method",
+      portfolioTitle: "Some Boostify creations",
+      portfolioEyebrow: "Portfolio",
+      aboutTitle: "Empowering every brand",
+      aboutEyebrow: "About",
+      contactTitle: "Start your project now",
+      contactEyebrow: "Order"
+    },
+    services: {
+      graphicTitle: "Graphic design",
+      graphicDesc: "Logos, posters, flyers, business cards, banners, menus and social media visuals.",
+      printTitle: "Printing",
+      printDesc: "Business cards, flyers, banners, stickers, custom T-shirts, invoices and receipt books.",
+      socialTitle: "Social media",
+      socialDesc: "Page creation, monthly content, Facebook/Instagram ads and profile optimization.",
+      businessTitle: "Business services",
+      businessDesc: "Complete visual identity, presentations, brochures, catalogs and email signatures.",
+      digitalTitle: "Digital services",
+      digitalDesc: "Showcase websites, professional CVs, portfolios, custom QR codes and content creation.",
+      adsTitle: "Advertising support",
+      adsDesc: "Strategy, campaign creation, tracking and optimization to maximize your return on investment."
+    },
+    packs: {
+      starterBadge: "Ideal startup",
+      businessBadge: "Most popular",
+      premiumBadge: "All inclusive",
+      starterBtn: "Choose this pack",
+      businessBtn: "Choose this pack",
+      premiumBtn: "Choose this pack",
+      logo: "1 professional logo",
+      card: "Business card",
+      fbVisual: "Facebook visual",
+      flyer: "Flyer",
+      fbCover: "Facebook cover",
+      identity: "Complete visual identity",
+      social10: "10 social media visuals",
+      support: "Advertising support"
+    },
+    process: {
+      briefTitle: "Brief",
+      briefDesc: "You describe your project, goals and inspirations.",
+      designTitle: "Design",
+      designDesc: "We create creative proposals and refine them together.",
+      deliveryTitle: "Delivery",
+      deliveryDesc: "You receive your files ready for print and web."
+    },
+    portfolio: {
+      card1: "Premium business card",
+      card2: "Bags & packaging",
+      card3: "Custom T-shirt",
+      card4: "Logo & visual identity"
+    },
+    about: {
+      role: "Graphic Designer & Brand Designer",
+      p1: "I am Bello Shouaïb, founder of Boostify. I design impactful visual identities and modern communication materials for entrepreneurs, businesses and individuals. My goal: transform your ideas into memorable designs that boost your image.",
+      p2: "Based in Conzagüe Ville, I work with clients in Côte d'Ivoire and beyond."
+    },
+    // Testimonials
+    testimonials: {
+      eyebrow: "They trusted us",
+      title: "What our clients say",
+      leaveReview: "Leave a review",
+      shareExperience: "Share your experience",
+      willBeValidated: "Your review will be published after validation.",
+      yourName: "Your name",
+      rating: "Rating",
+      yourReview: "Your review",
+      sendReview: "Send my review",
+      success: "✅ Thank you! Your review will be published after validation.",
+      error: "❌ An error occurred. Please try again."
+    },
+    contact: {
+      title: "Let's talk about your project",
+      desc: "Fill out the form to request a quote or order a pack. I will respond within 24 hours.",
+      name: "Full name",
+      email: "Email",
+      phone: "Phone",
+      company: "Company (optional)",
+      service: "Desired pack or service",
+      website: "Website creation",
+      select: "Select...",
+      message: "Describe your project",
+      language: "Preferred language",
+      submit: "Send request",
+      success: "✅ Request sent successfully! I will respond within 24 hours.",
+      error: "❌ An error occurred. Please try again or contact me directly."
+    },
+    footer: {
+      tagline: "The Alpha of Branding. Your visual identity, our mission.",
+      services: "Services",
+      packs: "Packs",
+      contact: "Contact",
+      rights: "All rights reserved."
+    }
+  }
+};
+
+let currentLang = 'fr';
+
+function setLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === 'fr' ? 'fr' : 'en';
+  document.title = langData[lang].title;
+
+  // Update all elements with data-fr and data-en
+  document.querySelectorAll('[data-fr][data-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  // Update buttons with pack data
+  document.querySelectorAll('.select-pack').forEach(btn => {
+    btn.textContent = langData[lang].packs[btn.dataset.packKey || 'starterBtn'];
+  });
+
+  // Update options in select
+  const select = document.getElementById('pack');
+  if (select) {
+    select.options[0].textContent = langData[lang].contact.select;
+    select.options[3].textContent = langData[lang].packs.identity;
+    select.options[4].textContent = langData[lang].contact.website || (lang === 'fr' ? "Création de site web" : "Website creation");
+    select.options[5].textContent = lang === 'fr' ? "Publicités réseaux sociaux" : "Social media ads";
+    select.options[6].textContent = lang === 'fr' ? "Autre (précisez ci-dessous)" : "Other (specify below)";
+  }
+
+  // Update language preference select
+  const langueSelect = document.getElementById('langue');
+  if (langueSelect) {
+    langueSelect.options[0].textContent = 'Français';
+    langueSelect.options[1].textContent = 'English';
+  }
+
+  // Toggle buttons
+  const btnFr = document.getElementById('btn-fr');
+  const btnEn = document.getElementById('btn-en');
+  if (btnFr && btnEn) {
+    btnFr.classList.toggle('active', lang === 'fr');
+    btnEn.classList.toggle('active', lang === 'en');
+  }
+
+  // Store preference
+  localStorage.setItem('boostify-lang', lang);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('boostify-lang') || 'fr';
+  setLanguage(savedLang);
+
+  const btnFr = document.getElementById('btn-fr');
+  const btnEn = document.getElementById('btn-en');
+  if (btnFr) btnFr.addEventListener('click', () => setLanguage('fr'));
+  if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
+});
+</script>
+  <script>// Mobile menu
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('nav');
+  const header = document.getElementById('header');
+  const navLinks = nav.querySelectorAll('a');
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      nav.classList.toggle('open');
+    });
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      nav.classList.remove('open');
+    });
+  });
+
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Scroll reveal animations
+  const revealElements = document.querySelectorAll('.service-card, .pack-card, .step, .portfolio-item, .testimonial-card, .about-grid, .contact-grid');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealElements.forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+  });
+
+  // Load dynamic config
+  loadConfig();
+
+  // Load testimonials
+  loadTestimonials();
+
+  // Load portfolio
+  loadPortfolio();
+
+  // Pack selection
+  const packButtons = document.querySelectorAll('.select-pack');
+  const packSelect = document.getElementById('pack');
+
+  packButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedPack = btn.dataset.pack;
+      if (packSelect) {
+        packSelect.value = selectedPack;
+      }
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Order form submission
+  const orderForm = document.getElementById('orderForm');
+  const formMessage = document.getElementById('formMessage');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (orderForm) {
+    orderForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...';
+      formMessage.className = 'form-message';
+      formMessage.style.display = 'none';
+
+      const formData = new FormData(orderForm);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('/api/orders', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          formMessage.textContent = currentLang === 'fr'
+            ? '✅ Demande envoyée avec succès ! Je vous réponds dans les 24 heures.'
+            : '✅ Request sent successfully! I will respond within 24 hours.';
+          formMessage.className = 'form-message success';
+          orderForm.reset();
+        } else {
+          throw new Error(result.message || 'Erreur serveur');
+        }
+      } catch (error) {
+        console.error('Erreur:', error);
+        formMessage.textContent = currentLang === 'fr'
+          ? '❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement.'
+          : '❌ An error occurred. Please try again or contact me directly.';
+        formMessage.className = 'form-message error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+  }
+
+  // Testimonial modal
+  const openTestimonialBtn = document.getElementById('openTestimonialBtn');
+  const testimonialModal = document.getElementById('testimonialModal');
+  const closeTestimonialModal = document.getElementById('closeTestimonialModal');
+  const testimonialForm = document.getElementById('testimonialForm');
+  const testimonialMessage = document.getElementById('testimonialMessage');
+
+  if (openTestimonialBtn && testimonialModal) {
+    openTestimonialBtn.addEventListener('click', () => {
+      testimonialModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  if (closeTestimonialModal && testimonialModal) {
+    closeTestimonialModal.addEventListener('click', () => {
+      testimonialModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    testimonialModal.addEventListener('click', (e) => {
+      if (e.target === testimonialModal) {
+        testimonialModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  if (testimonialForm) {
+    testimonialForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = testimonialForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...';
+      testimonialMessage.className = 'form-message';
+      testimonialMessage.style.display = 'none';
+
+      const formData = new FormData(testimonialForm);
+      const data = Object.fromEntries(formData.entries());
+      data.lang = currentLang;
+
+      try {
+        const response = await fetch('/api/testimonials', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          testimonialMessage.textContent = currentLang === 'fr'
+            ? '✅ Merci ! Votre avis sera publié après validation.'
+            : '✅ Thank you! Your review will be published after validation.';
+          testimonialMessage.className = 'form-message success';
+          testimonialForm.reset();
+          setTimeout(() => {
+            testimonialModal.classList.remove('active');
+            document.body.style.overflow = '';
+          }, 2000);
+        } else {
+          throw new Error(result.message || 'Erreur serveur');
+        }
+      } catch (error) {
+        console.error('Erreur:', error);
+        testimonialMessage.textContent = currentLang === 'fr'
+          ? '❌ Une erreur est survenue. Veuillez réessayer.'
+          : '❌ An error occurred. Please try again.';
+        testimonialMessage.className = 'form-message error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+  }
+});
+
+// Load site configuration
+async function loadConfig() {
+  try {
+    const response = await fetch('/api/config');
+    const result = await response.json();
+
+    if (!result.success || !result.config) return;
+
+    const config = result.config;
+
+    // Update logo images
+    const logoIds = ['siteLogo', 'heroLogo', 'aboutLogo', 'footerLogo'];
+    logoIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && config.logoPath) {
+        el.src = config.logoPath;
+      }
+    });
+
+    // Update favicon
+    const favicon = document.getElementById('favicon');
+    if (favicon && config.faviconPath) {
+      favicon.href = config.faviconPath;
+    }
+
+    // Update founder info
+    if (config.founderName) {
+      const founderName = document.getElementById('founderName');
+      const footerFounderName = document.getElementById('footerFounderName');
+      if (founderName) founderName.textContent = config.founderName;
+      if (footerFounderName) footerFounderName.textContent = config.founderName;
+    }
+
+    if (config.role) {
+      const founderRole = document.getElementById('founderRole');
+      if (founderRole) founderRole.textContent = config.role;
+    }
+
+    // Update contact info
+    if (config.email) {
+      updateContactLink('mailto:', config.email, config.email);
+    }
+    if (config.phone) {
+      updateContactLink('tel:', config.phone.replace(/\s/g, ''), config.phone);
+    }
+    if (config.whatsapp) {
+      const cleanWhatsapp = config.whatsapp.replace(/[\s+]/g, '');
+      updateContactLink('https://wa.me/', cleanWhatsapp, `WhatsApp : ${config.whatsapp}`);
+
+      // Update WhatsApp float button
+      const whatsappFloat = document.getElementById('whatsappFloat');
+      if (whatsappFloat) {
+        const message = currentLang === 'fr'
+          ? `Bonjour ${config.siteName || 'Boostify'}, je souhaite avoir plus d'informations sur vos services.`
+          : `Hello ${config.siteName || 'Boostify'}, I would like more information about your services.`;
+        whatsappFloat.href = `https://wa.me/${cleanWhatsapp}?text=${encodeURIComponent(message)}`;
+      }
+    }
+    if (config.location) {
+      const locationEl = document.querySelector('.info-item:last-child span:last-child');
+      if (locationEl) locationEl.textContent = config.location;
+    }
+
+  } catch (error) {
+    console.error('Erreur chargement config:', error);
+  }
+}
+
+function updateContactLink(prefix, value, displayText) {
+  const links = document.querySelectorAll(`a[href^="${prefix}"]`);
+  links.forEach(link => {
+    link.href = `${prefix}${value}`;
+    const span = link.querySelector('span:last-child');
+    if (span) span.textContent = displayText;
+  });
+}
+
+// Load testimonials (only replaces if server returns data)
+async function loadTestimonials() {
+  const grid = document.getElementById('testimonialsGrid');
+  if (!grid) return;
+
+  try {
+    const response = await fetch(`/api/testimonials?_t=${Date.now()}`);
+    const result = await response.json();
+
+    if (!result.success || !result.testimonials || result.testimonials.length === 0) {
+      // Keep default static testimonials
+      return;
+    }
+
+    grid.innerHTML = result.testimonials.map(t => {
+      const initials = t.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+      const stars = '⭐'.repeat(t.rating || 5);
+      return `
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">${stars}</div>
+          <p class="testimonial-text">${escapeHtml(t.text)}</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">${initials}</div>
+            <div>
+              <div class="testimonial-name">${escapeHtml(t.name)}</div>
+              <div class="testimonial-company">${escapeHtml(t.company || '')}</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  } catch (error) {
+    console.error('Erreur chargement témoignages:', error);
+    // Keep default static testimonials on error
+  }
+}
+
+// Load portfolio (only replaces if server returns data)
+async function loadPortfolio() {
+  const grid = document.getElementById('portfolioGrid');
+  if (!grid) return;
+
+  try {
+    const response = await fetch(`/api/portfolio?_t=${Date.now()}`);
+    const result = await response.json();
+
+    if (!result.success || !result.items || result.items.length === 0) {
+      // Keep default static portfolio
+      return;
+    }
+
+    grid.innerHTML = result.items.map(item => {
+      const title = currentLang === 'en' && item.titleEn ? item.titleEn : item.title;
+      return `
+        <div class="portfolio-item reveal">
+          <div class="portfolio-img">
+            <img src="${item.imagePath}?_t=${Date.now()}" alt="${escapeHtml(title)}" loading="lazy">
+          </div>
+          <p>${escapeHtml(title)}</p>
+        </div>
+      `;
+    }).join('');
+  } catch (error) {
+    console.error('Erreur chargement portfolio:', error);
+    // Keep default static portfolio on error
+  }
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+</script>
+</body>
+</html>
