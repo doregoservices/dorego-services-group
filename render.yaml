@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: boostify-website
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Configuration de la base de données MongoDB
+      - key: MONGODB_URI
+        sync: false
+      # Sécurité admin
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: SESSION_SECRET
+        generateValue: true
+      # Configuration email
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: NOTIFICATION_EMAIL
+        sync: false
+      - key: FROM_EMAIL
+        sync: false
+      # URL du site (à remplacer par votre domaine)
+      - key: SITE_URL
+        sync: false
+      # WhatsApp
+      - key: WHATSAPP_NUMBER
+        value: "2250161498523"
